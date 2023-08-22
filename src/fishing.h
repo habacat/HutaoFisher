@@ -45,13 +45,13 @@ class Fisher {
       {0.75, 0}, {0.75, 0}, {0.75, 0}, {0.75, 0}, {0.75, 0}, {0.75, 0},
       {0.75, 0}, {0.75, 0}, {0.75, 0}, {0.75, 0}};
   const int MaxRodTries = 25;
-  const int MaxFishFailNum = 5;  // at most 5 times miss fish can be tolerated
+  const int MaxFishFailNum = 15;  // at most 5 times miss fish can be tolerated
   // unit: second
-  const double MaxThrowWaiting = 3;
+  const double MaxThrowWaiting = 8;
   const double MaxBiteWaiting[FISH_CLASS_NUM] = {
       8,    8.5,  9.5,  10.5, 8.5,
       11.5, 11.5, 10.5, 9.5,  8.5};  // index is fish label
-  const double MaxControlWaiting = 3;
+  const double MaxControlWaiting = 8;
 
   bool typeToFish[FISH_CLASS_NUM];
   bool logAllImgs;
