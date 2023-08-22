@@ -1,7 +1,7 @@
 {
     "useGPU": true,
-    "logAllImgs": true,
-    "logData": true,
+    "logAllImgs": false,
+    "logData": false,
 
     "typeToFish": {
         "medaka": true,
